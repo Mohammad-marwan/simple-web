@@ -42,14 +42,15 @@ console.log(data)
   }
 
   return (
-   <form on onSubmit={formik.handleSubmit}>
+   <form className='d-flex flex-column justify-content-center  border border-2 p-4 mx-auto shadow p-3 mb-5 bg-body rounded '  style={{ maxWidth: "500px" }}
+  onSubmit={formik.handleSubmit} >
    {IsError?<div className='alert alert-warning'>{IsError}</div>:null} 
-  <div className="form-floating mb-3">  
-    <input type="email" name='email' value={formik.values.email} onChange={formik.handleChange} className="form-control" id="floatingInput" placeholder="name@example.com" />
+  <div className="form-floating  mb-3">  
+    <input type="email" name='email'  value={formik.values.email} onChange={formik.handleChange} className="form-control" id="floatingInput" placeholder="name@example.com" />
     <label htmlFor="floatingInput">Email address</label>
     {formik.touched.email && formik.errors.email? <div className='alert alert-warning'>{formik.errors.email}</div>:null}
   </div>
-  <div className="form-floating">
+  <div className="form-floating ">
     <input type="password" name='password' value={formik.values.password} onChange={formik.handleChange}  className="form-control" id="floatingPassword" placeholder="Password" />
     <label htmlFor="floatingPassword">Password</label>
     {formik.touched.password && formik.errors.password? <div className='alert alert-warning'>{formik.errors.password}</div>:null}

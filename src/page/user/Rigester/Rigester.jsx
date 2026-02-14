@@ -24,7 +24,7 @@ async function rigesterUser(){
 
 }
   return (
-  <form onSubmit={formik.handleSubmit}>
+  <form className='d-flex flex-column justify-content-center  border border-2 p-4 mx-auto shadow p-3 mb-5 bg-body rounded' style={{ maxWidth: "500px" }} onSubmit={formik.handleSubmit}>
  <div className="form-floating mb-3">
     <input type="text" name="userName" value={formik.userName} onChange={formik.handleChange} className="form-control" id="floatingtext" placeholder="userName" />
     <label htmlFor="floatingInput">userName</label>
