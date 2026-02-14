@@ -3,7 +3,7 @@ import Home from "../page/user/Home/Home.jsx";
 import Login from "../page/user/Login/Login.jsx";
 import Root from "../Root.jsx";
 import Rigester from "../page/user/Rigester/Rigester.jsx";
-import ProtectedRouter from "../components/protectedRouter/protectedRouter.jsx";
+import ProtectedRouter from "../components/user/ProtectedRouter/ProtectedRouter.jsx";
 
 
 const router = createBrowserRouter([
